@@ -6,7 +6,7 @@ import (
 	"os"
 	"text/template"
 
-	"github.com/NVIDIA/gpu-monitoring-tools/bindings/go/nvml"
+	"github.com/julian3xl/gpu-monitoring-tools/bindings/go/nvml"
 )
 
 const (

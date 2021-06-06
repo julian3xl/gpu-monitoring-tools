@@ -20,7 +20,7 @@ import (
 	"fmt"
 	"os"
 
-	"github.com/NVIDIA/gpu-monitoring-tools/bindings/go/dcgm"
+	"github.com/julian3xl/gpu-monitoring-tools/bindings/go/dcgm"
 )
 
 func NewDCGMCollector(c []Counter, config *Config) (*DCGMCollector, func(), error) {

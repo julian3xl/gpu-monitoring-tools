@@ -24,7 +24,7 @@ import (
 	"testing"
 	"time"
 
-	"github.com/NVIDIA/gpu-monitoring-tools/bindings/go/dcgm"
+	"github.com/julian3xl/gpu-monitoring-tools/bindings/go/dcgm"
 	"github.com/stretchr/testify/require"
 	"google.golang.org/grpc"
 	podresourcesapi "k8s.io/kubernetes/pkg/kubelet/apis/podresources/v1alpha1"

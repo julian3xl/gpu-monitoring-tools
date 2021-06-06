@@ -1,6 +1,6 @@
 ARG GOLANG_VERSION
 FROM golang:$GOLANG_VERSION AS builder
-WORKDIR /go/src/github.com/NVIDIA/gpu-monitoring-tools
+WORKDIR /go/src/github.com/julian3xl/gpu-monitoring-tools
 
 COPY . .
 
@@ -15,7 +15,7 @@ RUN yum install -y wget libgomp && \
     rpm -i ./datacenter-gpu-manager-*.rpm && \
     rm ./datacenter-gpu-manager-*.rpm
 
-COPY --from=builder /go/src/github.com/NVIDIA/gpu-monitoring-tools/pkg/dcgm-exporter /usr/bin/
+COPY --from=builder /go/src/github.com/julian3xl/gpu-monitoring-tools/pkg/dcgm-exporter /usr/bin/
 COPY etc/dcgm-exporter /etc/dcgm-exporter
 
 ENV NVIDIA_VISIBLE_DEVICES=all

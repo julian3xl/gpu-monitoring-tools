@@ -1,3 +1,3 @@
-module github.com/NVIDIA/gpu-monitoring-tools/bindings/go/dcgm
+module github.com/julian3xl/gpu-monitoring-tools/bindings/go/dcgm
 
 go 1.14

@@ -1,15 +1,15 @@
-module github.com/NVIDIA/gpu-monitoring-tools
+module github.com/julian3xl/gpu-monitoring-tools
 
 go 1.14
 
 require (
 	github.com/Masterminds/semver v1.5.0 // indirect
-	github.com/NVIDIA/gpu-monitoring-tools/bindings/go/dcgm v0.0.0-20210325210537-29b4f1784f18
+	github.com/julian3xl/gpu-monitoring-tools/bindings/go/dcgm v0.0.0-20210325210537-29b4f1784f18
 	github.com/gorilla/mux v1.7.4
 )
 
 replace (
-	github.com/NVIDIA/gpu-monitoring-tools/bindings/go/dcgm => ./bindings/go/dcgm
+	github.com/julian3xl/gpu-monitoring-tools/bindings/go/dcgm => ./bindings/go/dcgm
 	k8s.io/api => k8s.io/api v0.20.2
 	k8s.io/apiextensions-apiserver => k8s.io/apiextensions-apiserver v0.20.2
 	k8s.io/apimachinery => k8s.io/apimachinery v0.20.2
